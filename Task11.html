@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Elements Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Input Elements Showcase</h2>
+    <form id="inputElementsForm" action="/submit" method="POST">
+        
+        <!-- Text Input -->
+        <label for="textInput">Text Input:</label>
+        <input type="text" id="textInput" name="textInput" placeholder="Enter text here" required>
+
+        <!-- Email Input -->
+        <label for="emailInput">Email Input:</label>
+        <input type="email" id="emailInput" name="emailInput" placeholder="example@example.com" required>
+
+        <!-- Password Input -->
+        <label for="passwordInput">Password Input:</label>
+        <input type="password" id="passwordInput" name="passwordInput" placeholder="Enter password" required>
+
+        <!-- Number Input -->
+        <label for="numberInput">Number Input:</label>
+        <input type="number" id="numberInput" name="numberInput" placeholder="Enter a number" required>
+
+        <!-- Range Input -->
+        <label for="rangeInput">Range Input:</label>
+        <input type="range" id="rangeInput" name="rangeInput" min="1" max="100" required>
+
+        <!-- Date Input -->
+        <label for="dateInput">Date Input:</label>
+        <input type="date" id="dateInput" name="dateInput" required>
+
+        <!-- Time Input -->
+        <label for="timeInput">Time Input:</label>
+        <input type="time" id="timeInput" name="timeInput" required>
+
+        <!-- File Input -->
+        <label for="fileInput">File Input:</label>
+        <input type="file" id="fileInput" name="fileInput" required>
+
+        <!-- Radio Buttons -->
+        <label>Choose One:</label>
+        <div>
+            <input type="radio" id="option1" name="options" value="option1" required>
+            <label for="option1">Option 1</label>
+        </div>
+        <div>
+            <input type="radio" id="option2" name="options" value="option2" required>
+            <label for="option2">Option 2</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <label>Choose Your Hobbies:</label>
+        <div>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hobby2" name="hobbies" value="traveling">
+            <label for="hobby2">Traveling</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hobby3" name="hobbies" value="gaming">
+            <label for="hobby3">Gaming</label>
+        </div>
+
+        <!-- Dropdown (Select) -->
+        <label for="selectInput">Select Your Country:</label>
+        <select id="selectInput" name="country" required>
+            <option value="" disabled selected>Select your country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="textareaInput">Message:</label>
+        <textarea id="textareaInput" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
